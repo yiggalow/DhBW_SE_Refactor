@@ -41,7 +41,7 @@ class Customer {
         result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
         return result;
     }
-
+    //Step was allready done, amountFor is no longer part of the Method
     private double amountFor(Rental each) {
         double thisAmount = 0;
         switch (each.getMovie().getPriceCode()) {
