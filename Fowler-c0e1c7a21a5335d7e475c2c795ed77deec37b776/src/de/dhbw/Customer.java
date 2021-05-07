@@ -42,24 +42,24 @@ class Customer {
         return result;
     }
     //Step was allready done, amountFor is no longer part of the Method
-    private double amountFor(Rental each) {
-        double thisAmount = 0;
-        switch (each.getMovie().getPriceCode()) {
+    private double amountFor(Rental aRental) {
+        double rentalAmount = 0;
+        switch (aRental.getMovie().getPriceCode()) {
             case Movie.REGULAR:
-                thisAmount += 2;
-                if (each.getDaysRented() > 2)
-                    thisAmount += (each.getDaysRented() - 2) * 1.5;
+                rentalAmount += 2;
+                if (aRental.getDaysRented() > 2)
+                    rentalAmount += (aRental.getDaysRented() - 2) * 1.5;
                 break;
             case Movie.NEW_RELEASE:
-                thisAmount += each.getDaysRented() * 3;
+                rentalAmount += aRental.getDaysRented() * 3;
                 break;
             case Movie.CHILDRENS:
-                thisAmount += 1.5;
-                if (each.getDaysRented() > 3)
-                    thisAmount += (each.getDaysRented() - 3) * 1.5;
+                rentalAmount += 1.5;
+                if (aRental.getDaysRented() > 3)
+                    rentalAmount += (aRental.getDaysRented() - 3) * 1.5;
                 break;
         }
-        return thisAmount;
+        return rentalAmount;
     }
 
 }
