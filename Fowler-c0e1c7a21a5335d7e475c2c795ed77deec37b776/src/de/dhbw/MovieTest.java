@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MovieTest {
-    final String MOVIETITEL = "I am an Movie";
-    final int PRICECODE = 2;
+    private final String MOVIETITEL = "I am an Movie";
+    private final int PRICECODE = 2;
 
-    Movie movieForTesting;
+    private Movie movieForTesting;
 
 
     @BeforeEach

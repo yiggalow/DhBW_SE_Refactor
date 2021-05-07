@@ -2,12 +2,12 @@ package de.dhbw;
 
 import static org.junit.jupiter.api.Assertions.*;
 class RentalTest {
-    final String MOVIETITEL = "I am an Movie";
-    final int PRICECODE = 2;
-    final int RENTINGDAYS = 15;
+    private final String MOVIETITEL = "I am an Movie";
+    private final int PRICECODE = 2;
+    private final int RENTINGDAYS = 15;
 
-    Movie movieForTesting;
-    Rental rentalForTesting;
+    private Movie movieForTesting;
+    private Rental rentalForTesting;
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
